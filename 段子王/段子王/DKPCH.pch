@@ -1,0 +1,46 @@
+//
+//  DKPCH.pch
+//  段子王
+//
+//  Created by qianfeng on 15/10/8.
+//  Copyright (c) 2015年 李登科. All rights reserved.
+//
+
+#ifndef ____DKPCH_pch
+#define ____DKPCH_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+ 
+#import "UIView+DKSize.h"
+#import "DKRequestManger.h"
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+#import "MBProgressHUD.h"
+#import "AFNetworking.h"
+#import "UIButton+AFNetworking.h"
+
+
+#define SCREEN_W [UIScreen mainScreen].bounds.size.width
+#define SCREEN_H [UIScreen mainScreen].bounds.size.height
+
+#define MAIN_COLOR [UIColor colorWithRed:255/255.0 green:130/255.0 blue:1/255.0 alpha:1.0];
+
+#ifdef DEBUG
+#define DKLog(...) NSLog(__VA_ARGS__)
+#else
+#define DKLog(...)
+#endif
+
+
+/*
+ http://ic.snssdk.com/neihan/stream/mix/v1/?mpic=1&essence=1&content_type=-104&message_cursor=-1&longitude=114.4361387103&latitude=30.456998317939&bd_longitude=114.429579&bd_latitude=30.451306&bd_city=%E6%AD%A6%E6%B1%89%E5%B8%82&am_longitude=114.430279&am_latitude=30.452453&am_city=%E6%AD%A6%E6%B1%89%E5%B8%82&am_loc_time=1445930185748&count=30&min_time=1444878214&screen_width=720&iid=3156344825&device_id=6482137329&ac=wifi&channel=xiaomi&aid=7&app_name=joke_essay&version_code=440&version_name=4.4.0&device_platform=android&ssmix=a&device_type=MI+2S&os_api=21&os_version=5.0.2&uuid=860955025989421&openudid=2971623e2b864ba3&manifest_version_code=440
+ */
+
+#define HOME_URL @"http://ic.snssdk.com/neihan/stream/mix/v1/?mpic=1&essence=1&content_type=-104&message_cursor=-1&longitude=114.4361387103&latitude=30.456998317939&bd_longitude=114.429579&bd_latitude=30.451306&bd_city=%E6%AD%A6%E6%B1%89%E5%B8%82&am_longitude=114.430279&am_latitude=30.452453&am_city=%E6%AD%A6%E6%B1%89%E5%B8%82&am_loc_time=1445930185748&count=30&min_time=1444878214&screen_width=720&iid=3156344825&device_id=6482137329&ac=wifi&channel=xiaomi&aid=7&app_name=joke_essay&version_code=440&version_name=4.4.0&device_platform=android&ssmix=a&device_type=MI+2S&os_api=21&os_version=5.0.2&uuid=860955025989421&openudid=2971623e2b864ba3&manifest_version_code=440"
+
+#endif
+
+
+
+
